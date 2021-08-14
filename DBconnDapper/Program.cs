@@ -29,10 +29,12 @@ namespace DBconnDapper
 
             var customers = connection.Query<Customer>(sql);
 
+            connection.Open();
             foreach (var customer in customers)
             {
                 Console.WriteLine(customer);
             }
+            connection.Close();
         }
     }
 }
