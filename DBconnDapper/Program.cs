@@ -19,40 +19,58 @@ namespace DBconnDapper
 
             var connectionString = connectionStringBuilder.GetConnectionString(true);
 
-            Console.WriteLine(connectionString);
+            var sqlClient = new SqlClient(connectionString);
 
-            using var connection = new MySqlConnection(connectionString); // object represents connectivity
+            var sqlSelect = "select * from customers2 where age > @age";
 
-            //connection.Open(); //not neccessary with dapper
-            // ---------------SELECT---------------
-            var sqlSelect = "select * from customers2";
+            var sqlDelete = "DELETE FROM customers2 where age = @age";
 
-            var customers = connection.Query<Customer>(sqlSelect);
+            var rowsAffected = sqlClient.Execute(sqlDelete, new { Age = 36 });
+
+            Console.WriteLine(rowsAffected);
+
+            var customers = sqlClient.Query<Customer>(sqlSelect, new { Age = 30 });
 
             foreach (var customer in customers)
             {
                 Console.WriteLine(customer);
             }
 
-            // ---------------INSERT---------------
-            /*            var sqlInsert = @"INSERT INTO customers2 (first_name, last_name, email, street, city, state, age) VALUES(@first_name, @last_name, @email, @street, @city, @state, @age)";
+            /*
+                        Console.WriteLine(connectionString);
 
-                        // single insert
-                        *//*            connection.Execute(sqlInsert, new
-                                    {
-                                        first_name = "Algis",
-                                        last_name = "Glamoris",
-                                        email = "alg.glam@yahoooo.com",
-                                        street = "5 Ciauduliu",
-                                        city = "Didelis",
-                                        state = "Alytus",
-                                        age = 100
-                                    });*//*
-                        var fakeCustomers = GeneratePersonsYield(10);
+                        using var connection = new MySqlConnection(connectionString); // object represents connectivity
 
-                        //multiple inserts from IEnumerable (List)
+                        //connection.Open(); //not neccessary with dapper
+                        // ---------------SELECT---------------
+                        var sqlSelect = "select * from customers2";
 
-                        connection.Execute(sqlInsert, fakeCustomers); // automatically identifies, that given type is a list of objects*/
+                        var customers = connection.Query<Customer>(sqlSelect);
+
+                        foreach (var customer in customers)
+                        {
+                            Console.WriteLine(customer);
+                        }
+
+                        // ---------------INSERT---------------
+                        /*            var sqlInsert = @"INSERT INTO customers2 (first_name, last_name, email, street, city, state, age) VALUES(@first_name, @last_name, @email, @street, @city, @state, @age)";
+
+                                    // single insert
+                                    *//*            connection.Execute(sqlInsert, new
+                                                {
+                                                    first_name = "Algis",
+                                                    last_name = "Glamoris",
+                                                    email = "alg.glam@yahoooo.com",
+                                                    street = "5 Ciauduliu",
+                                                    city = "Didelis",
+                                                    state = "Alytus",
+                                                    age = 100
+                                                });*//*
+                                    var fakeCustomers = GeneratePersonsYield(10);
+
+                                    //multiple inserts from IEnumerable (List)
+
+                                    connection.Execute(sqlInsert, fakeCustomers); // automatically identifies, that given type is a list of objects*/
 
             // ---------------DELETE---------------
             /*            var sqlDelete = "DELETE FROM customers2 where customer_id = @customer_id";

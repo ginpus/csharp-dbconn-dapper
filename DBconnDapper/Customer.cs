@@ -19,7 +19,7 @@ namespace DBconnDapper
 
         public override string ToString()
         {
-            return $"{Customer_Id} {First_Name} {Last_Name} {Email}";
+            return $"{Customer_Id} {First_Name} {Last_Name} {Email} {Age}";
         }
 
         public string CustomerToQuery()
