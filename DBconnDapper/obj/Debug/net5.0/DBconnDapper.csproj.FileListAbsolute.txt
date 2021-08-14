@@ -35,3 +35,5 @@ F:\Desktop\dotNET\C#\8.14\DBconnDapper\obj\Debug\net5.0\DBconnDapper.dll
 F:\Desktop\dotNET\C#\8.14\DBconnDapper\obj\Debug\net5.0\ref\DBconnDapper.dll
 F:\Desktop\dotNET\C#\8.14\DBconnDapper\obj\Debug\net5.0\DBconnDapper.pdb
 F:\Desktop\dotNET\C#\8.14\DBconnDapper\obj\Debug\net5.0\DBconnDapper.genruntimeconfig.cache
+F:\Desktop\dotNET\C#\8.14\DBconnDapper\bin\Debug\net5.0\Faker.Net.5.0.dll
+F:\Desktop\dotNET\C#\8.14\DBconnDapper\bin\Debug\net5.0\de-DE\Faker.Net.5.0.resources.dll

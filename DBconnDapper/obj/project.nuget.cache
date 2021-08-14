@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BZOUXBp9mfSCE2RRR9qogCe8pw9NiK7L7N8Ow7T9OKpTHUyBMELZntFfDacNgeEak71fcbo2rL+dhdkrU38X8Q==",
+  "dgSpecHash": "gZakwojJQqDDAmdLaW4G/rCmz0L7ePpWtBJyUODTFFGInlFnAv+mnBFo2wtDSDJv0GNtcvqj2JqznnoPUpKs9A==",
   "success": true,
   "projectFilePath": "F:\\Desktop\\dotNET\\C#\\8.14\\DBconnDapper\\DBconnDapper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ginta\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\ginta\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
+    "C:\\Users\\ginta\\.nuget\\packages\\faker.net\\1.5.138\\faker.net.1.5.138.nupkg.sha512",
     "C:\\Users\\ginta\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
     "C:\\Users\\ginta\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
     "C:\\Users\\ginta\\.nuget\\packages\\k4os.compression.lz4.streams\\1.1.11\\k4os.compression.lz4.streams.1.1.11.nupkg.sha512",
@@ -13,6 +14,7 @@
     "C:\\Users\\ginta\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ginta\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\ginta\\.nuget\\packages\\mysql.data\\8.0.26\\mysql.data.8.0.26.nupkg.sha512",
+    "C:\\Users\\ginta\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\ginta\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\ginta\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",
     "C:\\Users\\ginta\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
