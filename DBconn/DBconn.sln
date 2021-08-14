@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBconn", "DBconn.csproj", "{74443E3D-7958-47FC-97ED-76A555F68DBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBconnDapper", "..\DBconnDapper\DBconnDapper.csproj", "{D6BD5EC6-AE56-4015-AD49-1AAD125B3E54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74443E3D-7958-47FC-97ED-76A555F68DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74443E3D-7958-47FC-97ED-76A555F68DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74443E3D-7958-47FC-97ED-76A555F68DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74443E3D-7958-47FC-97ED-76A555F68DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6BD5EC6-AE56-4015-AD49-1AAD125B3E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6BD5EC6-AE56-4015-AD49-1AAD125B3E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6BD5EC6-AE56-4015-AD49-1AAD125B3E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6BD5EC6-AE56-4015-AD49-1AAD125B3E54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00505651-1B51-453D-9FAB-910AE43D13E7}
+	EndGlobalSection
+EndGlobal
